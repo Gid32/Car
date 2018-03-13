@@ -81,5 +81,15 @@ public class Car {
 		return price;
 	}
 	
+	public String toString(){
+		String tmp = id +"\t";
+		tmp += mark +"\t";
+		tmp += model +"\t";
+		tmp += color +"\t";
+		tmp += price +"\t";
+		tmp += registrationNumber +"\t";
+		
+		return tmp;
+	}
 	
 }

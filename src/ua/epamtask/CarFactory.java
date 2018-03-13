@@ -9,8 +9,9 @@ public class CarFactory {
 		ArrayList<Car> carArray = new ArrayList<Car>();
 		
 		for (int i = 0; i < size; i++) {
-			carArray.add(new Car(Parameters.getRandomMark(), 
-					Parameters.getRandomModel(), 
+			String mark = Parameters.getRandomMark();
+			carArray.add(new Car(mark, 
+					Parameters.getRandomModel(mark), 
 					Parameters.getRandomyearOfProduction()));
 
 			carArray.get(i).setColor(Parameters.getRandomColor());
@@ -26,8 +27,9 @@ public class CarFactory {
 	}
 	
 	static public Car createCar(){
-		Car tmp = new Car(Parameters.getRandomMark(), 
-				Parameters.getRandomModel(), 
+		String mark = Parameters.getRandomMark();
+		Car tmp = new Car(mark, 
+				Parameters.getRandomModel(mark), 
 				Parameters.getRandomyearOfProduction());
 
 		tmp.setColor(Parameters.getRandomColor());

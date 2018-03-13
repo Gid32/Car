@@ -3,8 +3,6 @@ package ua.epamtask;
 import java.awt.Color;
 
 public class Car {
-	private static long freeId = 0;
-	
 	private final long id;
 	private final String mark;
 	private final String model;
@@ -13,15 +11,6 @@ public class Car {
 	private Color color;
 	private int price;
 	private String registrationNumber; 
-	
-	public Car(String mark, String model, int yearOfProduction){
-		this.mark = mark;
-		this.model = model;
-		this.yearOfProduction = yearOfProduction;
-		
-		id = getFreeId();
-	}
-	
 
 	public Car(long id, int yearOfProduction, int price, String mark, String model, String registrationNumber){
 		this.id = id;
@@ -31,12 +20,7 @@ public class Car {
 		this.model = model;
 		this.registrationNumber = registrationNumber;
 	}
-	
-	public static long getFreeId(){
-		long tmp = freeId;
-		freeId++;
-		return tmp;
-	}
+
 
 	public long getId() {
 		return id;

@@ -69,9 +69,9 @@ public class Car {
 		String tmp = id +"\t";
 		tmp += mark +"\t";
 		tmp += model +"\t";
-		tmp += color +"\t";
+		tmp += color.toString() +"\t";
 		tmp += price +"\t";
-		tmp += registrationNumber +"\t";
+		tmp += registrationNumber;
 		
 		return tmp;
 	}

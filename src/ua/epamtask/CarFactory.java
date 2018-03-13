@@ -1,6 +1,4 @@
-package car;
-
-import car.Car;
+package ua.epamtask;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package car;
+package ua.epamtask;
 
 import java.awt.Color;
 

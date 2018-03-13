@@ -73,7 +73,7 @@ public class Car {
 	}
 
 
-	private void setPrice(int price) {
+	public void setPrice(int price) {
 		this.price = price;
 	}
 	

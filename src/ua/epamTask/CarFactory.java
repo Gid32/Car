@@ -16,7 +16,7 @@ public class CarFactory {
 					Parameters.getRandomyearOfProduction()));
 
 			carArray.get(i).setColor(Parameters.getRandomColor());
-			carArray.get(i).setCost(Parameters.getRandomCost());
+			carArray.get(i).setPrice(Parameters.getRandomCost());
 			carArray.get(i).setRegistrationNumber(Parameters.getRandomRegistrationNumber());
 		
 		}
@@ -24,15 +24,15 @@ public class CarFactory {
 	}
 
 	static public Car createCar(){
-			Car tmp = new Car(Parameters.getRandomMark(), 
-					Parameters.getRandomModel(), 
-					Parameters.getRandomyearOfProduction());
+		Car tmp = new Car(Parameters.getRandomMark(), 
+				Parameters.getRandomModel(), 
+				Parameters.getRandomyearOfProduction());
 
-			tmp.setColor(Parameters.getRandomColor());
-			tmp.setPrice(Parameters.getRandomCost());
-			tmp.setRegistrationNumber(Parameters.getRandomRegistrationNumber());
+		tmp.setColor(Parameters.getRandomColor());
+		tmp.setPrice(Parameters.getRandomCost());
+		tmp.setRegistrationNumber(Parameters.getRandomRegistrationNumber());
 		
-		}
-		return carArray;
+		
+		return tmp;
 	}
 }

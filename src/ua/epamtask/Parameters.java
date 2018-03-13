@@ -12,6 +12,7 @@ public class Parameters {
 	static HashMap<String, String[]> models;
 	
 	static{
+		models = new HashMap<String, String[]>();
 		models.put("Audi", new String[]{"A4","A5","A6"});
 	}
 	

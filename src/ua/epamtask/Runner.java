@@ -9,10 +9,10 @@ public class Runner {
         ArrayList<Car> carMassive = new ArrayList<>();
         for (int i = 0; i < 20; i++) carMassive.add(CarFactory.createCar());
 
-        for (Car car : CarUtils.getCarsOfGivenMark("Audi", carMassive)) car.toString();
+        for (Car car : CarUtils.getCarsOfGivenMark("Audi", carMassive)) System.out.println(car.toString());
 
-        for (Car car : CarUtils.getCarsOfGivenModelAndLifeTime("a2", 5, carMassive)) car.toString();
+        for (Car car : CarUtils.getCarsOfGivenModelAndLifeTime("A6", 5, carMassive)) System.out.println(car.toString());
 
-        for (Car car : CarUtils.getCarsOfGivenYearOfProductionAndPrice(1995, 1000, carMassive)) car.toString();
+        for (Car car : CarUtils.getCarsOfGivenYearOfProductionAndPrice(1995, 1000, carMassive)) System.out.println(car.toString());
     }
 }

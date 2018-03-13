@@ -1,14 +1,12 @@
 package ua.epamtask;
 
-import java.awt.Color;
-
 public class Car {
 	private final long id;
 	private final String mark;
 	private final String model;
 	private final int yearOfProduction;
 	
-	private Color color;
+	private String color;
 	private int price;
 	private String registrationNumber; 
 
@@ -40,12 +38,12 @@ public class Car {
 	}
 
 	
-	public Color getColor() {
+	public String getColor() {
 		return color;
 	}
 
-	public void setColor(Color color) {
-		this.color = color;
+	public void setColor(String string) {
+		this.color = string;
 	}
 
 	public String getRegistrationNumber() {
@@ -69,7 +67,8 @@ public class Car {
 		String tmp = id +"\t";
 		tmp += mark +"\t";
 		tmp += model +"\t";
-		tmp += color.toString() +"\t";
+		tmp += yearOfProduction +"\t";
+		tmp += color +"\t";
 		tmp += price +"\t";
 		tmp += registrationNumber;
 		

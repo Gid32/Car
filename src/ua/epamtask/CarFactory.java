@@ -8,11 +8,13 @@ public class CarFactory {
 	static public Car createCar(){
 		String mark = Parameters.getRandomMark();
 		
-		return new Car(IdGenerator.getFreeId(), 
+		Car tmp =  new Car(IdGenerator.getFreeId(), 
 				Parameters.getRandomyearOfProduction(), 
 				Parameters.getRandomPrice(), 
 				mark, 
 				Parameters.getRandomModel(mark), 
 				Parameters.getRandomRegistrationNumber());
+		tmp.setColor(Parameters.getRandomColor());
+		return tmp;
 	}
 }

@@ -14,20 +14,24 @@ public class CarFactory {
 					Parameters.getRandomyearOfProduction()));
 
 			carArray.get(i).setColor(Parameters.getRandomColor());
-			carArray.get(i).setPrice(Parameters.getRandomCost());
+			carArray.get(i).setPrice(Parameters.getRandomPrice());
 			carArray.get(i).setRegistrationNumber(Parameters.getRandomRegistrationNumber());
 		
 		}
 		return carArray;
 	}
 
+	static public Car createCar(long id, int yearOfProduction, int price, String mark, String model, String registrationNumber){
+		return new Car(id, yearOfProduction, price, mark, model, registrationNumber);
+	}
+	
 	static public Car createCar(){
 		Car tmp = new Car(Parameters.getRandomMark(), 
 				Parameters.getRandomModel(), 
 				Parameters.getRandomyearOfProduction());
 
 		tmp.setColor(Parameters.getRandomColor());
-		tmp.setPrice(Parameters.getRandomCost());
+		tmp.setPrice(Parameters.getRandomPrice());
 		tmp.setRegistrationNumber(Parameters.getRandomRegistrationNumber());
 		
 		
